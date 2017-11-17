@@ -16,6 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <uses-permission android:name="android.permissions.READ_DATABASE"/>
+        <uses-permission android:name="android.permissioms.WRITE_DATABASE"/>
+        <uses-permission android:name="com.example.ruslanmanca.myhealthvolkov.READ_DATABASE"/>
+        <uses-permission android:name="com.example.ruslanmanca.myhealthvolkov.WRITE_DATABASE"/>
+
+        <provider android:name=".contentproviders.PersonProvider"
+            android:authorities="ruslanauthority"
+            android:exported="true"
+            android:readPermission="com.example.ruslanmanca.myhealthvolkov.READ_DATABASE"
+            android:writePermission="com.example.ruslanmanca.myhealthvolkov.WRITE_DATABASE" />
     </application>
 
 </manifest>

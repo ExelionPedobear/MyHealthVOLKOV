@@ -3,12 +3,42 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="/fragment.java">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../DijonCenterVOLKOV/app/src/main/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../DijonCenterVOLKOV/app/src/main/java/com/example/ruslanmanca/dijoncentervolkov/MainActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../DijonCenterVOLKOV/app/src/main/java/com/example/ruslanmanca/dijoncentervolkov/adapters/database/DatabaseAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../DijonCenterVOLKOV/app/src/main/java/com/example/ruslanmanca/dijoncentervolkov/dictionaries/PersonDictionary.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <value>
             <set />
           </value>
@@ -19,6 +49,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/example/ruslanmanca/myhealthvolkov/adapters/database/PersonAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/example/ruslanmanca/myhealthvolkov/contentproviders/PersonProvider.java">
           <value>
             <set />
           </value>

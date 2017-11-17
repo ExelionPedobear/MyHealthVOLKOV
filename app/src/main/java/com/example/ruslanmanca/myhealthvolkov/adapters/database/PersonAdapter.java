@@ -1,11 +1,14 @@
 package com.example.ruslanmanca.myhealthvolkov.adapters.database;
 
+import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.example.ruslanmanca.myhealthvolkov.models.database.Person;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 
 /**
  * Created by RuslanManca on 17/11/2017.
@@ -59,6 +62,31 @@ public class PersonAdapter {
         cursor.close();
 
         return person;
+    }
+
+    public long insert(Person person){
+        long id = -2;
+        try {
+
+            Calendar c = Calendar.getInstance();
+            SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy HH:mm:ss");
+            String formattedDate = df.format(c.getTime());
+
+            ContentValues contentValue = new ContentValues();
+            contentValue.put("nomPerson", person.getNomPerson());
+            contentValue.put("prenomPerson", person.getPrenomPerson());
+            contentValue.put("agePerson", person.getAgePerson());
+            contentValue.put("poidsPerson", person.getPoidsPerson());
+            contentValue.put("dateMajPerson", formattedDate);
+            contentValue.put("loginPerson", person.getLoginPerson());
+
+            id = db.insert(TABLE, null, contentValue);
+
+            return id;
+        }
+        catch(Exception ex){
+            return id;
+        }
     }
 
     private ArrayList<Person> fillPersonList(Cursor cursor){
