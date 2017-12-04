@@ -30,6 +30,8 @@ public class PersonProvider extends ContentProvider {
     // The path to the data… and explain
     public static final String PATH_TO_DATA = "ruslandata"; //Vous pouvez déclarer plusieurs paths (les paths utilisent les /)
 
+    public static final String PATH_TO_LOGIN = "ruslanlogin";
+
     public PersonAdapter personAdapter = null;
     public SQLiteDatabase myDb = null;
 
@@ -95,6 +97,9 @@ public class PersonProvider extends ContentProvider {
             case ITEM:
                 qb.appendWhere(PersonsData.KEY_COL_ID_PERSON + "=" + uri.getPathSegments().get(1));
                 break;
+            case LOGIN:
+                qb.appendWhere(PersonsData.KEY_COL_LOGIN_PERSON + " like '" + uri.getPathSegments().get(1) + "'");
+                break;
             default:
                 break;
         }
@@ -128,6 +133,8 @@ public class PersonProvider extends ContentProvider {
 
     private static final int COLLECTION = 2;
 
+    private static final int LOGIN = 3;
+
     private static final UriMatcher uriMatcher;
 
     // Alloue l'objet UriMatcher.
@@ -136,7 +143,8 @@ public class PersonProvider extends ContentProvider {
     static {
         uriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
         uriMatcher.addURI(PersonProvider.AUTHORITY, PersonProvider.PATH_TO_DATA, COLLECTION);
-        uriMatcher.addURI(PersonProvider.AUTHORITY + " ", " " + PersonProvider.PATH_TO_DATA + " /#", ITEM);
+        uriMatcher.addURI(PersonProvider.AUTHORITY, PersonProvider.PATH_TO_DATA + "/#", ITEM);
+        uriMatcher.addURI(PersonProvider.AUTHORITY, PersonProvider.PATH_TO_LOGIN + "/*", LOGIN);
     }
 
     @Nullable

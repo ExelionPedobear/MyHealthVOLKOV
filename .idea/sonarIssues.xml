@@ -23,7 +23,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../DijonCenterVOLKOV/app/src/main/java/com/example/ruslanmanca/dijoncentervolkov/CarteActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../DijonCenterVOLKOV/app/src/main/java/com/example/ruslanmanca/dijoncentervolkov/MainActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../DijonCenterVOLKOV/app/src/main/java/com/example/ruslanmanca/dijoncentervolkov/adapters/PoiAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../DijonCenterVOLKOV/app/src/main/java/com/example/ruslanmanca/dijoncentervolkov/adapters/contentproviders/PersonProvider.java">
           <value>
             <set />
           </value>
@@ -33,7 +48,32 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../DijonCenterVOLKOV/app/src/main/java/com/example/ruslanmanca/dijoncentervolkov/dictionaries/HealthDictionary.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../DijonCenterVOLKOV/app/src/main/java/com/example/ruslanmanca/dijoncentervolkov/dictionaries/PersonDictionary.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../DijonCenterVOLKOV/app/src/main/java/com/example/ruslanmanca/dijoncentervolkov/listadapters/PoiListViewAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../DijonCenterVOLKOV/app/src/main/java/com/example/ruslanmanca/dijoncentervolkov/models/contentproviders/Person.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../DijonCenterVOLKOV/app/src/main/java/com/example/ruslanmanca/dijoncentervolkov/providers/PersonProvider.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../DijonCenterVOLKOV/app/src/main/res/layout/activity_main.xml">
           <value>
             <set />
           </value>
